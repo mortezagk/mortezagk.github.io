@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
+
+        :root {
+            --background-color: #d9d9d9;
+            --text-color: #000;
+            --link-color: #0366d6;
+            --prompt-color: #4e4e4e;
+        }
+
+        h1 {
+            font-family: 'Inconsolata', monospace;
+            font-weight: 700;
+            font-size: 3em;
+        }
+
+        h2 {
+            font-family: 'Inconsolata', monospace;
+            font-weight: 700;
+            font-size: 2em;
+        }
+
+        body {
+            font-family: 'Inconsolata', monospace;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            background: var(--background-color);
+            color: var(--text-color);
+        }
+
+        .intro {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            position: sticky;
+            top: 0;
+            background: var(--background-color);
+            padding: 1rem;
+            z-index: 1;
+        }
+
+        .intro h1 {
+            margin: 0;
+            border: none;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            margin-top: -1rem;
+        }
+
+        .terminal-prompt {
+            color: var(--prompt-color);
+            margin: 0;
+        }
+
+        a {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .about ul {
+            list-style: none;
+            padding-left: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .about ul li {
+            position: relative;
+            margin-bottom: 0.5rem;
+        }
+
+        .about ul li::before {
+            content: "•";
+            position: absolute;
+            left: -1.5rem;
+            color: var(--prompt-color);
+        }
+
+        .date {
+            color: var(--prompt-color);
+            font-size: 0.9em;
+            width: 100px;
+            flex-shrink: 0;
+            margin: 0;
+            padding-top: 2px;
+        }
+
+        .history {
+            padding: 0;
+            margin: 0;
+        }
+
+        .history li {
+            list-style: none;
+            margin-bottom: 1.5rem;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .history li div {
+            flex-grow: 1;
+        }
+
+        .history li div p {
+            margin: 0 0 0.5rem 0;
+        }
+
+        .history li div p:last-child {
+            margin-bottom: 0;
+        }
+
+        .project-list {
+            padding: 0;
+        }
+
+        .project-list li {
+            list-style: none;
+            margin-bottom: 1rem;
+        }
+
+        .project-title {
+            margin-bottom: 0.2rem;
+        }
+
+        .project-description {
+            color: var(--prompt-color);
+            font-size: 0.9em;
+        }
+
+        .icons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .icons a {
+            color: var(--text-color);
+            font-size: 1.2rem;
+            transition: color 0.2s;
+        }
+
+        .icons a:hover {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+
+        h1, h2 {
+            border-bottom: 1px solid #eaecef;
+            padding-bottom: 0.3em;
+        }
+
+        .footer {
+            margin-top: 2rem;
+            font-size: 0.8em;
+            color: var(--prompt-color);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --background-color: #1d1f21;
+                --text-color: #c5c8c6;
+                --link-color: #81a2be;
+                --prompt-color: #969896;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .intro {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
