@@ -1,1 +1,1 @@
-Source for my personal website (mortezagk.github.io): a simple, fast static site built with plain HTML/CSS and served via GitHub Pages.
+Source for my personal profile (mortezagk.github.io): a simple, fast static site built with plain HTML/CSS and served via GitHub Pages.
